@@ -1,0 +1,12 @@
+Data types
+
+1.int :-5,10
+2.float:15.5,3.14
+3.list:[1,2,3]
+4.dictionary:{name:"sree",age:"18"}
+5.tuple:(10,20)
+6.string:"Character"
+7.boolean:var:"true" or "false"
+8.complex:3+4i
+9.set:empty set {}
+set:{1,2,3}

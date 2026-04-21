@@ -1,0 +1,39 @@
+Operators in python:
+1.Arithmetic (+, -, *, /, //, %, **)
+Addition(+): 5 + 2 =7
+Subtraction (-): 4 - 2 = 2
+Multiplication (*): 2 * 3 = 6
+Division (/): 10 / 3 → 3.33
+Floor Division (//):10 // 3 → 3
+Modulus (%): 5 % 2 → 1
+Exponentiation (**):4 ** 2 → 16
+ 2.Logical operators
+and: Returns True if both statements are true. (5 > 2) and (3 < 6) → True
+or: Returns True if at least one statement is true. (5 > 2) or (3 > 6) → True
+not: Reverses the result. not(True) → False 
+3.Assignment Operators
+Used to assign values to variables, often combining an operation with assignment. 
+ (=): a = 10
+(+=): a += 5 (Same as a = a + 5)
+(:=): Example: if (n := len(list)) > 0: print(n) 
+4. Bitwise Operators
+Operate on binary numbers bit-by-bit. 
+AND (&): 5 & 3 (Binary: 101 & 011) → 1 (Binary: 001)
+OR (|): 5 | 3 → 7
+5.Relational Operators
+Compare two values and return a Boolean 
+Equal to (==): 3 == 5 → False
+Not equal to (!=): 3 != 5 → True
+Greater than (>): 5 > 3 → True
+Less than or equal to (<=): 3 <= 5 → True 
+6.Special Operators
+Identity Operators: Check if two variables point to the same object in memory.
+is: x is y (True if x and y are the same object)
+is not: x is not y
+7.Membership Operators
+in: Returns True if the specified value is present in the sequence; otherwise, it returns False.
+not in: Returns True if the specified value is not present in the sequence. 
+
+ 
+
+ 
