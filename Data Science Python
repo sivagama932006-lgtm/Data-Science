@@ -1,0 +1,4229 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "c60edc00-5679-4a3a-99b3-a5b9a3de6a89",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "7b52da73-f3bc-4445-9d0e-b4e862f97132",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "c3225375-720a-4917-8443-e24f35c4234a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "\n",
+    "\n",
+    "a=[10,20,30,40]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "80629d61-e2e8-4781-97a6-c647f6242df0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "list"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "364af4d4-6fbf-4569-94c6-7b3554fa6f95",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=np.array(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "aef946f5-8e5e-4c93-937d-c9280c66829c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10 20 30 40]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "f20b17d6-4999-40ea-a46c-6078daeafc5f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "numpy.ndarray"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(x)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "56230a89-567d-4b83-ba8a-365464e1eed2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "6e575846-e118-4ca6-86f9-85431bfacd55",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = [1,2,3,4]\n",
+    "b = [10,20,30,40]\n",
+    "x = np.array([a,b])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "7d2ca7e8-aeb7-4db7-91b7-ca986e24bfa4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1  2  3  4]\n",
+      " [10 20 30 40]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "601160ce-f9cb-4846-867c-514ee02f705e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "ad6c3bff-729a-466d-9232-c30223354062",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = [1,2,3]\n",
+    "b = [10,20,30]\n",
+    "x = np.array([a,b])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "9362292c-7acf-4f3c-8004-72d1653fa1a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1  2  3]\n",
+      " [10 20 30]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "30accef9-452a-4bdd-aaed-ff9ef9a5ccc6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1. 2. 3. 4.]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = np.array([1,2,3,4], dtype = np.float32)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "fb91f329-abe4-4749-b933-a8c29b664d68",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0. 0. 0.]\n",
+      " [0. 0. 0.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = np.zeros((2,3))\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "fc6623df-7963-42af-bfa2-24d3df4bdaf0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0. 0. 0. 0.]\n",
+      " [0. 0. 0. 0.]\n",
+      " [0. 0. 0. 0.]\n",
+      " [0. 0. 0. 0.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = np.zeros((4,4))\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "22d65476-d191-4276-87ac-bee65acbf08c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 1., 1.],\n",
+       "       [1., 1., 1.],\n",
+       "       [1., 1., 1.]])"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.ones((3,3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "4978fa22-5abc-4510-9c08-f3184753e032",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([1, 1, 1, 1, 1], dtype=int32)"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.ones(5, dtype = np.int32)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "0b222882-a116-47b5-8274-c7be29d2116c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = np.random.rand(2,5)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "081b25d4-5137-41c8-8744-b715c3269fe3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0.93405374 0.64089898 0.8593104  0.77814884 0.57546884]\n",
+      " [0.70362319 0.77297251 0.49232069 0.16852038 0.49573587]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "9702eba2-d7c2-4d2d-98f5-220f2f0b111b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m np.random.rand(*args)\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "rand(d0, d1, ..., dn)\n",
+       "\n",
+       "Random values in a given shape.\n",
+       "\n",
+       ".. note::\n",
+       "    This is a convenience function for users porting code from Matlab,\n",
+       "    and wraps `random_sample`. That function takes a\n",
+       "    tuple to specify the size of the output, which is consistent with\n",
+       "    other NumPy functions like `numpy.zeros` and `numpy.ones`.\n",
+       "\n",
+       "Create an array of the given shape and populate it with\n",
+       "random samples from a uniform distribution\n",
+       "over ``[0, 1)``.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "d0, d1, ..., dn : int, optional\n",
+       "    The dimensions of the returned array, must be non-negative.\n",
+       "    If no argument is given a single Python float is returned.\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "out : ndarray, shape ``(d0, d1, ..., dn)``\n",
+       "    Random values.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "random\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> np.random.rand(3,2)\n",
+       "array([[ 0.14022471,  0.96360618],  #random\n",
+       "       [ 0.37601032,  0.25528411],  #random\n",
+       "       [ 0.49313049,  0.94909878]]) #random\n",
+       "\u001b[31mType:\u001b[39m      method"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "np.random.rand??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "883376ab-16a7-4d5d-bd88-500a55d03f2d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "c9d3b026-0aa5-49b1-b0c1-271230eb28e5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m np.random.rand(*args)\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "rand(d0, d1, ..., dn)\n",
+       "\n",
+       "Random values in a given shape.\n",
+       "\n",
+       ".. note::\n",
+       "    This is a convenience function for users porting code from Matlab,\n",
+       "    and wraps `random_sample`. That function takes a\n",
+       "    tuple to specify the size of the output, which is consistent with\n",
+       "    other NumPy functions like `numpy.zeros` and `numpy.ones`.\n",
+       "\n",
+       "Create an array of the given shape and populate it with\n",
+       "random samples from a uniform distribution\n",
+       "over ``[0, 1)``.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "d0, d1, ..., dn : int, optional\n",
+       "    The dimensions of the returned array, must be non-negative.\n",
+       "    If no argument is given a single Python float is returned.\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "out : ndarray, shape ``(d0, d1, ..., dn)``\n",
+       "    Random values.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "random\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> np.random.rand(3,2)\n",
+       "array([[ 0.14022471,  0.96360618],  #random\n",
+       "       [ 0.37601032,  0.25528411],  #random\n",
+       "       [ 0.49313049,  0.94909878]]) #random\n",
+       "\u001b[31mType:\u001b[39m      method"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "np.random.rand??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "b2cfc2b7-6522-44eb-8550-2b360bcde46a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[12, 16, 18],\n",
+       "       [ 6, 10,  2],\n",
+       "       [ 4,  8, 19]], dtype=int32)"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.random.randint(1,20, size = (3,3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "d1c4f252-9415-411f-ab62-e0a3b7af3090",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m np.random.randint(low, high=\u001b[38;5;28;01mNone\u001b[39;00m, size=\u001b[38;5;28;01mNone\u001b[39;00m, dtype=<\u001b[38;5;28;01mclass\u001b[39;00m \u001b[33m'int'\u001b[39m>)\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "randint(low, high=None, size=None, dtype=int)\n",
+       "\n",
+       "Return random integers from `low` (inclusive) to `high` (exclusive).\n",
+       "\n",
+       "Return random integers from the \"discrete uniform\" distribution of\n",
+       "the specified dtype in the \"half-open\" interval [`low`, `high`). If\n",
+       "`high` is None (the default), then results are from [0, `low`).\n",
+       "\n",
+       ".. note::\n",
+       "    New code should use the `~numpy.random.Generator.integers`\n",
+       "    method of a `~numpy.random.Generator` instance instead;\n",
+       "    please see the :ref:`random-quick-start`.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "low : int or array-like of ints\n",
+       "    Lowest (signed) integers to be drawn from the distribution (unless\n",
+       "    ``high=None``, in which case this parameter is one above the\n",
+       "    *highest* such integer).\n",
+       "high : int or array-like of ints, optional\n",
+       "    If provided, one above the largest (signed) integer to be drawn\n",
+       "    from the distribution (see above for behavior if ``high=None``).\n",
+       "    If array-like, must contain integer values\n",
+       "size : int or tuple of ints, optional\n",
+       "    Output shape.  If the given shape is, e.g., ``(m, n, k)``, then\n",
+       "    ``m * n * k`` samples are drawn.  Default is None, in which case a\n",
+       "    single value is returned.\n",
+       "dtype : dtype, optional\n",
+       "    Desired dtype of the result. Byteorder must be native.\n",
+       "    The default value is long.\n",
+       "\n",
+       "    .. warning::\n",
+       "      This function defaults to the C-long dtype, which is 32bit on windows\n",
+       "      and otherwise 64bit on 64bit platforms (and 32bit on 32bit ones).\n",
+       "      Since NumPy 2.0, NumPy's default integer is 32bit on 32bit platforms\n",
+       "      and 64bit on 64bit platforms.  Which corresponds to `np.intp`.\n",
+       "      (`dtype=int` is not the same as in most NumPy functions.)\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "out : int or ndarray of ints\n",
+       "    `size`-shaped array of random integers from the appropriate\n",
+       "    distribution, or a single such random int if `size` not provided.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "random_integers : similar to `randint`, only for the closed\n",
+       "    interval [`low`, `high`], and 1 is the lowest value if `high` is\n",
+       "    omitted.\n",
+       "random.Generator.integers: which should be used for new code.\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> np.random.randint(2, size=10)\n",
+       "array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0]) # random\n",
+       ">>> np.random.randint(1, size=10)\n",
+       "array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])\n",
+       "\n",
+       "Generate a 2 x 4 array of ints between 0 and 4, inclusive:\n",
+       "\n",
+       ">>> np.random.randint(5, size=(2, 4))\n",
+       "array([[4, 0, 2, 1], # random\n",
+       "       [3, 2, 2, 0]])\n",
+       "\n",
+       "Generate a 1 x 3 array with 3 different upper bounds\n",
+       "\n",
+       ">>> np.random.randint(1, [3, 5, 10])\n",
+       "array([2, 2, 9]) # random\n",
+       "\n",
+       "Generate a 1 by 3 array with 3 different lower bounds\n",
+       "\n",
+       ">>> np.random.randint([1, 5, 7], 10)\n",
+       "array([9, 8, 7]) # random\n",
+       "\n",
+       "Generate a 2 by 4 array using broadcasting with dtype of uint8\n",
+       "\n",
+       ">>> np.random.randint([1, 3, 5, 7], [[10], [20]], dtype=np.uint8)\n",
+       "array([[ 8,  6,  9,  7], # random\n",
+       "       [ 1, 16,  9, 12]], dtype=uint8)\n",
+       "\u001b[31mType:\u001b[39m      method"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "np.random.randint??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "4dc82853-d9f8-4897-b41e-06d60a35f402",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 2.40144611, -0.11508678,  0.2274506 ,  0.86168572, -0.79920586],\n",
+       "       [-0.86619051,  1.80408752,  0.38371007, -1.76588809, -0.10942903]])"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.random.randn(2,5)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "eb50c5f2-fd54-4cae-b0dc-1bb29542b4dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m np.random.randn(*args)\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "randn(d0, d1, ..., dn)\n",
+       "\n",
+       "Return a sample (or samples) from the \"standard normal\" distribution.\n",
+       "\n",
+       ".. note::\n",
+       "    This is a convenience function for users porting code from Matlab,\n",
+       "    and wraps `standard_normal`. That function takes a\n",
+       "    tuple to specify the size of the output, which is consistent with\n",
+       "    other NumPy functions like `numpy.zeros` and `numpy.ones`.\n",
+       "\n",
+       ".. note::\n",
+       "    New code should use the\n",
+       "    `~numpy.random.Generator.standard_normal`\n",
+       "    method of a `~numpy.random.Generator` instance instead;\n",
+       "    please see the :ref:`random-quick-start`.\n",
+       "\n",
+       "If positive int_like arguments are provided, `randn` generates an array\n",
+       "of shape ``(d0, d1, ..., dn)``, filled\n",
+       "with random floats sampled from a univariate \"normal\" (Gaussian)\n",
+       "distribution of mean 0 and variance 1. A single float randomly sampled\n",
+       "from the distribution is returned if no argument is provided.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "d0, d1, ..., dn : int, optional\n",
+       "    The dimensions of the returned array, must be non-negative.\n",
+       "    If no argument is given a single Python float is returned.\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "Z : ndarray or float\n",
+       "    A ``(d0, d1, ..., dn)``-shaped array of floating-point samples from\n",
+       "    the standard normal distribution, or a single such float if\n",
+       "    no parameters were supplied.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "standard_normal : Similar, but takes a tuple as its argument.\n",
+       "normal : Also accepts mu and sigma arguments.\n",
+       "random.Generator.standard_normal: which should be used for new code.\n",
+       "\n",
+       "Notes\n",
+       "-----\n",
+       "For random samples from the normal distribution with mean ``mu`` and\n",
+       "standard deviation ``sigma``, use::\n",
+       "\n",
+       "    sigma * np.random.randn(...) + mu\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> np.random.randn()\n",
+       "2.1923875335537315  # random\n",
+       "\n",
+       "Two-by-four array of samples from the normal distribution with\n",
+       "mean 3 and standard deviation 2.5:\n",
+       "\n",
+       ">>> 3 + 2.5 * np.random.randn(2, 4)\n",
+       "array([[-4.49401501,  4.00950034, -1.81814867,  7.29718677],   # random\n",
+       "       [ 0.39924804,  4.68456316,  4.99394529,  4.84057254]])  # random\n",
+       "\u001b[31mType:\u001b[39m      method"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "np.random.randn??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "dc36264c-391b-43f3-be70-991e98bc8572",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.int64(3)"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.random.choice([2,3,4,7,8,10])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "c0042bec-87db-4b9b-b046-caca84214239",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[10, 10, 10, 10],\n",
+       "       [10, 10, 10, 10],\n",
+       "       [10, 10, 10, 10]])"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.full((3,4),10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "f00a11d2-5cba-490f-8732-ad7c8f6c28d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[10., 10., 10.],\n",
+       "       [10., 10., 10.],\n",
+       "       [10., 10., 10.]])"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.ones((3,3))*10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "4865e757-4d3e-40cb-966e-2c618a6c1df5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0. 0. 0. 0.]\n",
+      " [1. 0. 0. 0.]\n",
+      " [0. 1. 0. 0.]\n",
+      " [0. 0. 1. 0.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = np.eye(4, k = -1)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "ef1aaecc-0354-4272-95cf-2e92dae8b80c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m\n",
+       "np.eye(\n",
+       "    N,\n",
+       "    M=\u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    k=\u001b[32m0\u001b[39m,\n",
+       "    dtype=<\u001b[38;5;28;01mclass\u001b[39;00m \u001b[33m'float'\u001b[39m>,\n",
+       "    order=\u001b[33m'C'\u001b[39m,\n",
+       "    *,\n",
+       "    device=\u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    like=\u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       ")\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "Return a 2-D array with ones on the diagonal and zeros elsewhere.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "N : int\n",
+       "  Number of rows in the output.\n",
+       "M : int, optional\n",
+       "  Number of columns in the output. If None, defaults to `N`.\n",
+       "k : int, optional\n",
+       "  Index of the diagonal: 0 (the default) refers to the main diagonal,\n",
+       "  a positive value refers to an upper diagonal, and a negative value\n",
+       "  to a lower diagonal.\n",
+       "dtype : data-type, optional\n",
+       "  Data-type of the returned array.\n",
+       "order : {'C', 'F'}, optional\n",
+       "    Whether the output should be stored in row-major (C-style) or\n",
+       "    column-major (Fortran-style) order in memory.\n",
+       "device : str, optional\n",
+       "    The device on which to place the created array. Default: None.\n",
+       "    For Array-API interoperability only, so must be ``\"cpu\"`` if passed.\n",
+       "\n",
+       "    .. versionadded:: 2.0.0\n",
+       "like : array_like, optional\n",
+       "        Reference object to allow the creation of arrays which are not\n",
+       "        NumPy arrays. If an array-like passed in as ``like`` supports\n",
+       "        the ``__array_function__`` protocol, the result will be defined\n",
+       "        by it. In this case, it ensures the creation of an array object\n",
+       "        compatible with that passed in via this argument.\n",
+       "\n",
+       "    .. versionadded:: 1.20.0\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "I : ndarray of shape (N,M)\n",
+       "  An array where all elements are equal to zero, except for the `k`-th\n",
+       "  diagonal, whose values are equal to one.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "identity : (almost) equivalent function\n",
+       "diag : diagonal 2-D array from a 1-D array specified by the user.\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> import numpy as np\n",
+       ">>> np.eye(2, dtype=int)\n",
+       "array([[1, 0],\n",
+       "       [0, 1]])\n",
+       ">>> np.eye(3, k=1)\n",
+       "array([[0.,  1.,  0.],\n",
+       "       [0.,  0.,  1.],\n",
+       "       [0.,  0.,  0.]])\n",
+       "\u001b[31mSource:\u001b[39m   \n",
+       "@finalize_array_function_like\n",
+       "@set_module(\u001b[33m'numpy'\u001b[39m)\n",
+       "\u001b[38;5;28;01mdef\u001b[39;00m eye(N, M=\u001b[38;5;28;01mNone\u001b[39;00m, k=\u001b[32m0\u001b[39m, dtype=float, order=\u001b[33m'C'\u001b[39m, *, device=\u001b[38;5;28;01mNone\u001b[39;00m, like=\u001b[38;5;28;01mNone\u001b[39;00m):\n",
+       "    \u001b[33m\"\"\"\u001b[39m\n",
+       "\u001b[33m    Return a 2-D array with ones on the diagonal and zeros elsewhere.\u001b[39m\n",
+       "\n",
+       "\u001b[33m    Parameters\u001b[39m\n",
+       "\u001b[33m    ----------\u001b[39m\n",
+       "\u001b[33m    N : int\u001b[39m\n",
+       "\u001b[33m      Number of rows in the output.\u001b[39m\n",
+       "\u001b[33m    M : int, optional\u001b[39m\n",
+       "\u001b[33m      Number of columns in the output. If None, defaults to `N`.\u001b[39m\n",
+       "\u001b[33m    k : int, optional\u001b[39m\n",
+       "\u001b[33m      Index of the diagonal: 0 (the default) refers to the main diagonal,\u001b[39m\n",
+       "\u001b[33m      a positive value refers to an upper diagonal, and a negative value\u001b[39m\n",
+       "\u001b[33m      to a lower diagonal.\u001b[39m\n",
+       "\u001b[33m    dtype : data-type, optional\u001b[39m\n",
+       "\u001b[33m      Data-type of the returned array.\u001b[39m\n",
+       "\u001b[33m    order : {'C', 'F'}, optional\u001b[39m\n",
+       "\u001b[33m        Whether the output should be stored in row-major (C-style) or\u001b[39m\n",
+       "\u001b[33m        column-major (Fortran-style) order in memory.\u001b[39m\n",
+       "\u001b[33m    device : str, optional\u001b[39m\n",
+       "\u001b[33m        The device on which to place the created array. Default: None.\u001b[39m\n",
+       "\u001b[33m        For Array-API interoperability only, so must be ``\"cpu\"`` if passed.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        .. versionadded:: 2.0.0\u001b[39m\n",
+       "\u001b[33m    ${ARRAY_FUNCTION_LIKE}\u001b[39m\n",
+       "\n",
+       "\u001b[33m        .. versionadded:: 1.20.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m    Returns\u001b[39m\n",
+       "\u001b[33m    -------\u001b[39m\n",
+       "\u001b[33m    I : ndarray of shape (N,M)\u001b[39m\n",
+       "\u001b[33m      An array where all elements are equal to zero, except for the `k`-th\u001b[39m\n",
+       "\u001b[33m      diagonal, whose values are equal to one.\u001b[39m\n",
+       "\n",
+       "\u001b[33m    See Also\u001b[39m\n",
+       "\u001b[33m    --------\u001b[39m\n",
+       "\u001b[33m    identity : (almost) equivalent function\u001b[39m\n",
+       "\u001b[33m    diag : diagonal 2-D array from a 1-D array specified by the user.\u001b[39m\n",
+       "\n",
+       "\u001b[33m    Examples\u001b[39m\n",
+       "\u001b[33m    --------\u001b[39m\n",
+       "\u001b[33m    >>> import numpy as np\u001b[39m\n",
+       "\u001b[33m    >>> np.eye(2, dtype=int)\u001b[39m\n",
+       "\u001b[33m    array([[1, 0],\u001b[39m\n",
+       "\u001b[33m           [0, 1]])\u001b[39m\n",
+       "\u001b[33m    >>> np.eye(3, k=1)\u001b[39m\n",
+       "\u001b[33m    array([[0.,  1.,  0.],\u001b[39m\n",
+       "\u001b[33m           [0.,  0.,  1.],\u001b[39m\n",
+       "\u001b[33m           [0.,  0.,  0.]])\u001b[39m\n",
+       "\n",
+       "\u001b[33m    \"\"\"\u001b[39m\n",
+       "    \u001b[38;5;28;01mif\u001b[39;00m like \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "        \u001b[38;5;28;01mreturn\u001b[39;00m _eye_with_like(\n",
+       "            like, N, M=M, k=k, dtype=dtype, order=order, device=device\n",
+       "        )\n",
+       "    \u001b[38;5;28;01mif\u001b[39;00m M \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "        M = N\n",
+       "    m = zeros((N, M), dtype=dtype, order=order, device=device)\n",
+       "    \u001b[38;5;28;01mif\u001b[39;00m k >= M:\n",
+       "        \u001b[38;5;28;01mreturn\u001b[39;00m m\n",
+       "    \u001b[38;5;66;03m# Ensure M and k are integers, so we don't get any surprise casting\u001b[39;00m\n",
+       "    \u001b[38;5;66;03m# results in the expressions `M-k` and `M+1` used below.  This avoids\u001b[39;00m\n",
+       "    \u001b[38;5;66;03m# a problem with inputs with type (for example) np.uint64.\u001b[39;00m\n",
+       "    M = operator.index(M)\n",
+       "    k = operator.index(k)\n",
+       "    \u001b[38;5;28;01mif\u001b[39;00m k >= \u001b[32m0\u001b[39m:\n",
+       "        i = k\n",
+       "    \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "        i = (-k) * M\n",
+       "    m[:M - k].flat[i::M + \u001b[32m1\u001b[39m] = \u001b[32m1\u001b[39m\n",
+       "    \u001b[38;5;28;01mreturn\u001b[39;00m m\n",
+       "\u001b[31mFile:\u001b[39m      c:\\users\\acer\\anaconda3\\lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py\n",
+       "\u001b[31mType:\u001b[39m      function"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "np.eye??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "cb0ec2f9-88f3-4c78-88a5-936a11bc2f79",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 5,  6,  7,  8,  9, 10])"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.arange(5,11)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "462978ec-b777-4e5f-999a-da130d5cf769",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 0,  2,  4,  6,  8, 10])"
+      ]
+     },
+     "execution_count": 38,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.arange(0,11,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "432d5711-d964-4e5e-bb0b-0b1e276bf7c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0.  , 0.25, 0.5 , 0.75, 1.  ])"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.linspace(0,1,5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "e3475481-0c00-4592-b3b3-f776a317d7e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10 20 30 40 50]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [10,20,30,40,50]\n",
+    "x = np.array(a)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "97c53aa5-2e4b-4d94-a710-3ddcb83ca57f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x.ndim"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "c5f8b2d4-11fa-4379-ba13-d3769bca1d89",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[10 20 30 40 50]\n",
+      " [ 1  2  3  4  5]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "b = [1,2,3,4,5]\n",
+    "y = np.array([a,b])\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "ae9eb0a7-ff77-48b3-a53e-17a94951f00d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y.ndim"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "0357597f-4b4f-47d6-8200-3108aa916453",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 5)"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "ea59bd53-ccee-489c-9dc6-d1ed4c9a39ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y.size"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "28dfd029-54fc-4db2-8bf0-06efff0bb674",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 3  6  9 12]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.array([3,6,9,12])\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "1c3376bc-d3fa-4a1b-b4fb-a4766ed6fb2b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 3,  6],\n",
+       "       [ 9, 12]])"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.reshape(a, (2,2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "a767031e-2b6d-4117-a8d0-4130381d4e30",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 3,  6],\n",
+       "       [ 9, 12]])"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a.reshape(2,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "7ec484c0-6526-4609-9044-18c9c2db046c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15])"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = np.arange(1,16)\n",
+    "x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "4be4a433-172c-4990-97e7-4891efcdbb06",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "15"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x.size"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "5f68547f-bf91-43ad-986b-23ab20858aea",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 1,  2,  3],\n",
+       "       [ 4,  5,  6],\n",
+       "       [ 7,  8,  9],\n",
+       "       [10, 11, 12],\n",
+       "       [13, 14, 15]])"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x.reshape(5,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "5b934df0-5d99-48b9-8200-9f4eda45c895",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = np.arange(1,16)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "e9a01925-ca7e-4e63-a150-e742358ba96b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1  2  3  4  5]\n",
+      " [ 6  7  8  9 10]\n",
+      " [11 12 13 14 15]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "y = x.reshape(3,5)\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "ea566e6e-17fb-41af-a440-a12358b3c8c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1  6 11]\n",
+      " [ 2  7 12]\n",
+      " [ 3  8 13]\n",
+      " [ 4  9 14]\n",
+      " [ 5 10 15]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "z = np.transpose(y)\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "7470e9c1-c5f8-4d64-835c-9f2ad1b9f1dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 1,  6, 11],\n",
+       "       [ 2,  7, 12],\n",
+       "       [ 3,  8, 13],\n",
+       "       [ 4,  9, 14],\n",
+       "       [ 5, 10, 15]])"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y.transpose()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "cb7e9e80-9cb4-4d2b-b641-aa0304b0c189",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.arange(1,10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "d8f4b9cc-31bb-451e-8a78-db9cb6725549",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 2 3 4 5 6 7 8 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "4bf4dffc-eba4-47dd-8a28-59f820a27a8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([3, 4, 5, 6])"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[2:6]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "0e627efe-7978-4707-883b-ed59cf69c206",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 2 3]\n",
+      " [4 5 6]\n",
+      " [7 8 9]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = np.arange(1,10).reshape(3,3)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "dbad74cd-4b31-44d8-ab17-d230321cec19",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.int64(6)"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x[1,2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "c11109b7-870e-47fb-b873-34968bb8b74a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.int64(6)"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x[1][2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "51501f31-9e4e-4f69-ba51-1a8a3d7ea9dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[5, 6],\n",
+       "       [8, 9]])"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x[1:3,1:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "4fd5ba9d-d78a-4a88-b715-1c4866727474",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.arange(1,6)\n",
+    "b = np.arange(6,11)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "c1645f69-c3f7-47fc-8d40-874096d9f398",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 2 3 4 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "1eb18877-c792-48d1-a435-5ea5ba99c4c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 6  7  8  9 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "ed38dabd-3da5-45f0-8d9f-b61938342944",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = np.vstack((a,b))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "6b24f853-7265-4ef7-997a-9fa9b39e6dff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1  2  3  4  5]\n",
+      " [ 6  7  8  9 10]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "5f3e20b4-241c-4750-8e91-fdea5cf2474a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.arange(1,10).reshape(3,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "ae532ed5-b90e-4c4b-85f5-5e64b08ac0e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = np.arange(10,19).reshape(3,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "f5e2eb04-8581-4914-89f7-9cbe4e70f33d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 2 3]\n",
+      " [4 5 6]\n",
+      " [7 8 9]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "a72cd0c6-144d-4286-8c08-d2bebdf815a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[10 11 12]\n",
+      " [13 14 15]\n",
+      " [16 17 18]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "679af049-63d2-49a3-813a-f0d43ca30a69",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 1,  2,  3],\n",
+       "       [ 4,  5,  6],\n",
+       "       [ 7,  8,  9],\n",
+       "       [10, 11, 12],\n",
+       "       [13, 14, 15],\n",
+       "       [16, 17, 18]])"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.concatenate((a,b))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "e1016eae-6ac8-4492-87c6-4a1a034f88d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 1,  2,  3, 10, 11, 12],\n",
+       "       [ 4,  5,  6, 13, 14, 15],\n",
+       "       [ 7,  8,  9, 16, 17, 18]])"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.concatenate((a,b), axis = 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "f225d19b-d97a-4c15-bcaa-296209662925",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.arange(10,21,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "2bdeeeca-831f-431b-824b-7823405d4e10",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b = np.array([[2],[2]])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "ce22786f-275a-45d1-9df4-066934bba7d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10 12 14 16 18 20]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "4c8c3992-619f-4380-9fdd-dac02c04ffcd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[2]\n",
+      " [2]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "42712fbe-ba21-470e-ab6f-90e554581b5e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[12 14 16 18 20 22]\n",
+      " [12 14 16 18 20 22]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "z = a+b\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "62c990af-2218-46cb-8621-0f8e855175c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.arange(10,21,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "6617e11a-7168-4d73-b5f1-db4bf8cfb8aa",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([12, 14, 16, 18, 20, 22])"
+      ]
+     },
+     "execution_count": 80,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a+2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "8fb22bde-2207-493a-9176-1bd6cd145480",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 8, 10, 12, 14, 16, 18],\n",
+       "       [ 8, 10, 12, 14, 16, 18]])"
+      ]
+     },
+     "execution_count": 81,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a - b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "0271c5cb-ac4b-4b4d-86d2-dfa82c50b418",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[20, 24, 28, 32, 36, 40],\n",
+       "       [20, 24, 28, 32, 36, 40]])"
+      ]
+     },
+     "execution_count": 82,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a*b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "id": "fb2c8328-e5c3-44a7-b22f-af93725a72ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 1. 1.]\n",
+      " [1. 1. 1.]\n",
+      " [1. 1. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.ones((3,3))\n",
+    "b = np.array([2])\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "e6384751-51e8-4b97-8777-cbc1dc13405b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "0c9d5856-aec6-40da-8804-93ff660be970",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[3., 3., 3.],\n",
+       "       [3., 3., 3.],\n",
+       "       [3., 3., 3.]])"
+      ]
+     },
+     "execution_count": 85,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a+b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "631fce01-e26d-49f9-b5bc-9c4b11f4b0ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[-1., -1., -1.],\n",
+       "       [-1., -1., -1.],\n",
+       "       [-1., -1., -1.]])"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a-b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "189d0528-7883-491a-b30d-83ff4679d198",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 0. 0. 0.]\n",
+      " [0. 1. 0. 0.]\n",
+      " [0. 0. 1. 0.]\n",
+      " [0. 0. 0. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.eye(4)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "ec59ca95-9488-4bac-8790-cbbfc6c4fa2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[6. 5. 5. 5.]\n",
+      " [5. 6. 5. 5.]\n",
+      " [5. 5. 6. 5.]\n",
+      " [5. 5. 5. 6.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a+5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "59ad9b09-13a4-4fe0-a482-c382f72bf904",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0., -1., -1., -1.],\n",
+       "       [-1.,  0., -1., -1.],\n",
+       "       [-1., -1.,  0., -1.],\n",
+       "       [-1., -1., -1.,  0.]])"
+      ]
+     },
+     "execution_count": 89,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a - 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "c0575a1d-0038-482a-99d0-7208d69d7333",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[2., 0., 0., 0.],\n",
+       "       [0., 2., 0., 0.],\n",
+       "       [0., 0., 2., 0.],\n",
+       "       [0., 0., 0., 2.]])"
+      ]
+     },
+     "execution_count": 90,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a*2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "0a534120-3b4f-4c0f-ab4c-5193df19ad0d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[2., 0., 0., 0.],\n",
+       "       [0., 2., 0., 0.],\n",
+       "       [0., 0., 2., 0.],\n",
+       "       [0., 0., 0., 2.]])"
+      ]
+     },
+     "execution_count": 91,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a/0.5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "38042652-1923-4c29-972c-06f78909f987",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0.84147098, 0.        , 0.        , 0.        ],\n",
+       "       [0.        , 0.84147098, 0.        , 0.        ],\n",
+       "       [0.        , 0.        , 0.84147098, 0.        ],\n",
+       "       [0.        , 0.        , 0.        , 0.84147098]])"
+      ]
+     },
+     "execution_count": 92,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.sin(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "id": "35bbbe90-3ef7-4087-82f0-9cb6b3cc0b6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[0.54030231, 1.        , 1.        , 1.        ],\n",
+       "       [1.        , 0.54030231, 1.        , 1.        ],\n",
+       "       [1.        , 1.        , 0.54030231, 1.        ],\n",
+       "       [1.        , 1.        , 1.        , 0.54030231]])"
+      ]
+     },
+     "execution_count": 93,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.cos(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "cf9b0707-73f2-4282-91a7-b221e1afc617",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[1., 0., 0., 0.],\n",
+       "       [0., 1., 0., 0.],\n",
+       "       [0., 0., 1., 0.],\n",
+       "       [0., 0., 0., 1.]])"
+      ]
+     },
+     "execution_count": 94,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.sqrt(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "1247d088-3ec4-4180-a869-10f5584d9864",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.arange(5,15,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "b2ec55c1-9456-4ee3-9e3e-8aafc77891a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 5  7  9 11 13]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "892c459e-9ee3-41e4-86a8-4dc8f4139c4f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(9.0)"
+      ]
+     },
+     "execution_count": 97,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.mean(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "66358902-68c5-4b4e-808d-9e34328d7285",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(9.0)"
+      ]
+     },
+     "execution_count": 98,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.median(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "189a62c7-f7d6-4813-8b09-7381c74c4712",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "np.float64(2.8284271247461903)"
+      ]
+     },
+     "execution_count": 99,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.std(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "id": "a11e4908-768f-41b9-8359-57edd847ad78",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 6]\n",
+      " [4 3]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = np.array([[1,6],[4,3]])\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "id": "4ff8e105-37f3-4d31-bc39-ebdff94dd65b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(np.min(a, axis = 0))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "1b841a73-d94d-44b5-8af9-45b3c3288f1d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(np.min(a, axis = 1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "da644ed4-d4f2-4b99-bf49-32a6ecf7af40",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[6 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(np.max(a, axis = 1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "600b68f1-2ae6-4df6-b173-633545c74171",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(np.max(a, axis = 0))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "id": "3d101c4f-e7dc-48c8-a99d-6afe979e0bd7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = np.array([1,4,3,10,20])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "2d991520-3ef9-4c36-9a56-1287af988765",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = np.sort(a, kind = 'mergesort')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "8f44d585-0a0d-44a7-8e92-9ee7fc71c0ec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 1  3  4 10 20]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "6401cce5-75ab-48ec-b2f0-facdb8dfbc93",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A = np.arange(0,9).reshape(3,3)\n",
+    "B = np.ones((3,3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "id": "e2dc56bd-d3d0-499f-92ff-82841b6eb5ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[0 1 2]\n",
+      " [3 4 5]\n",
+      " [6 7 8]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(A)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "7782363f-9aaa-4655-a94d-e92779b3da1b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1. 1. 1.]\n",
+      " [1. 1. 1.]\n",
+      " [1. 1. 1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(B)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "id": "cf412c29-0f4a-4ec9-95fb-2d6fd9ca1270",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 3.,  3.,  3.],\n",
+       "       [12., 12., 12.],\n",
+       "       [21., 21., 21.]])"
+      ]
+     },
+     "execution_count": 111,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "np.dot(A,B)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "id": "1538464b-45c4-4e95-b609-b7d6bfe6e608",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 3.,  3.,  3.],\n",
+       "       [12., 12., 12.],\n",
+       "       [21., 21., 21.]])"
+      ]
+     },
+     "execution_count": 112,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "A.dot(B)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "d140d390-e4d9-4475-b19b-62b3e9bb34f7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "id": "8f932f13-dbdb-4a6b-8c50-faf152e39fe8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "id": "a1f42c77-1741-4496-8147-db044711cf28",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d = {\n",
+    "    'A': [1,2, np.nan],\n",
+    "    'B':[5, np.nan, np.nan],\n",
+    "    'C':[1,2,3]\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "id": "2ec32c76-4534-4961-8b82-9dfd83617131",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df = pd.DataFrame(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "id": "9d5f4c4b-31ea-41f5-9d4b-c0393d963dd0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1\n",
+       "1  2.0  NaN  2\n",
+       "2  NaN  NaN  3"
+      ]
+     },
+     "execution_count": 117,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "a5324f96-d0ed-4eae-9129-6ae7471eb2ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1"
+      ]
+     },
+     "execution_count": 118,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.dropna()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "id": "774013f8-69cf-4167-bef8-f022a5bd864d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1"
+      ]
+     },
+     "execution_count": 119,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.dropna(axis = 0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "98ef6327-9e70-4ca9-b1b9-71af99262a28",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   C\n",
+       "0  1\n",
+       "1  2\n",
+       "2  3"
+      ]
+     },
+     "execution_count": 120,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.dropna(axis = 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "f6b69a59-9233-4edc-9766-4702ef5889b9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1\n",
+       "1  2.0  NaN  2\n",
+       "2  NaN  NaN  3"
+      ]
+     },
+     "execution_count": 121,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "c5f44eec-a7b7-4930-865f-f7133273ae80",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2.0</td>\n",
+       "      <td>Filling Value</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>Filling Value</td>\n",
+       "      <td>Filling Value</td>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "               A              B  C\n",
+       "0            1.0            5.0  1\n",
+       "1            2.0  Filling Value  2\n",
+       "2  Filling Value  Filling Value  3"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.fillna(value = 'Filling Value')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "id": "e5ce2c13-dd28-4660-9d74-b78845c4e902",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df = pd.DataFrame(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "id": "2db747a5-077b-4eb4-bcc0-91922d67c3ba",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = df['A'].fillna(value = df['A'].mean())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "id": "8c059169-e72f-428c-8340-98a7f7e8d260",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>NaN</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1\n",
+       "1  2.0  NaN  2\n",
+       "2  NaN  NaN  3"
+      ]
+     },
+     "execution_count": 125,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "id": "89a57968-8f49-4448-9693-88951c28592b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m\n",
+       "df.fillna(\n",
+       "    value: \u001b[33m'Hashable | Mapping | Series | DataFrame | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    *,\n",
+       "    method: \u001b[33m'FillnaOptions | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    axis: \u001b[33m'Axis | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    inplace: \u001b[33m'bool_t'\u001b[39m = \u001b[38;5;28;01mFalse\u001b[39;00m,\n",
+       "    limit: \u001b[33m'int | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    downcast: \u001b[33m'dict | None | lib.NoDefault'\u001b[39m = <no_default>,\n",
+       ") -> \u001b[33m'Self | None'\u001b[39m\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "Fill NA/NaN values using the specified method.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "value : scalar, dict, Series, or DataFrame\n",
+       "    Value to use to fill holes (e.g. 0), alternately a\n",
+       "    dict/Series/DataFrame of values specifying which value to use for\n",
+       "    each index (for a Series) or column (for a DataFrame).  Values not\n",
+       "    in the dict/Series/DataFrame will not be filled. This value cannot\n",
+       "    be a list.\n",
+       "method : {'backfill', 'bfill', 'ffill', None}, default None\n",
+       "    Method to use for filling holes in reindexed Series:\n",
+       "\n",
+       "    * ffill: propagate last valid observation forward to next valid.\n",
+       "    * backfill / bfill: use next valid observation to fill gap.\n",
+       "\n",
+       "    .. deprecated:: 2.1.0\n",
+       "        Use ffill or bfill instead.\n",
+       "\n",
+       "axis : {0 or 'index'} for Series, {0 or 'index', 1 or 'columns'} for DataFrame\n",
+       "    Axis along which to fill missing values. For `Series`\n",
+       "    this parameter is unused and defaults to 0.\n",
+       "inplace : bool, default False\n",
+       "    If True, fill in-place. Note: this will modify any\n",
+       "    other views on this object (e.g., a no-copy slice for a column in a\n",
+       "    DataFrame).\n",
+       "limit : int, default None\n",
+       "    If method is specified, this is the maximum number of consecutive\n",
+       "    NaN values to forward/backward fill. In other words, if there is\n",
+       "    a gap with more than this number of consecutive NaNs, it will only\n",
+       "    be partially filled. If method is not specified, this is the\n",
+       "    maximum number of entries along the entire axis where NaNs will be\n",
+       "    filled. Must be greater than 0 if not None.\n",
+       "downcast : dict, default is None\n",
+       "    A dict of item->dtype of what to downcast if possible,\n",
+       "    or the string 'infer' which will try to downcast to an appropriate\n",
+       "    equal type (e.g. float64 to int64 if possible).\n",
+       "\n",
+       "    .. deprecated:: 2.2.0\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "Series/DataFrame or None\n",
+       "    Object with missing values filled or None if ``inplace=True``.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "ffill : Fill values by propagating the last valid observation to next valid.\n",
+       "bfill : Fill values by using the next valid observation to fill the gap.\n",
+       "interpolate : Fill NaN values using interpolation.\n",
+       "reindex : Conform object to new index.\n",
+       "asfreq : Convert TimeSeries to specified frequency.\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> df = pd.DataFrame([[np.nan, 2, np.nan, 0],\n",
+       "...                    [3, 4, np.nan, 1],\n",
+       "...                    [np.nan, np.nan, np.nan, np.nan],\n",
+       "...                    [np.nan, 3, np.nan, 4]],\n",
+       "...                   columns=list(\"ABCD\"))\n",
+       ">>> df\n",
+       "     A    B   C    D\n",
+       "0  NaN  2.0 NaN  0.0\n",
+       "1  3.0  4.0 NaN  1.0\n",
+       "2  NaN  NaN NaN  NaN\n",
+       "3  NaN  3.0 NaN  4.0\n",
+       "\n",
+       "Replace all NaN elements with 0s.\n",
+       "\n",
+       ">>> df.fillna(0)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  0.0  0.0\n",
+       "1  3.0  4.0  0.0  1.0\n",
+       "2  0.0  0.0  0.0  0.0\n",
+       "3  0.0  3.0  0.0  4.0\n",
+       "\n",
+       "Replace all NaN elements in column 'A', 'B', 'C', and 'D', with 0, 1,\n",
+       "2, and 3 respectively.\n",
+       "\n",
+       ">>> values = {\"A\": 0, \"B\": 1, \"C\": 2, \"D\": 3}\n",
+       ">>> df.fillna(value=values)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  2.0  0.0\n",
+       "1  3.0  4.0  2.0  1.0\n",
+       "2  0.0  1.0  2.0  3.0\n",
+       "3  0.0  3.0  2.0  4.0\n",
+       "\n",
+       "Only replace the first NaN element.\n",
+       "\n",
+       ">>> df.fillna(value=values, limit=1)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  2.0  0.0\n",
+       "1  3.0  4.0  NaN  1.0\n",
+       "2  NaN  1.0  NaN  3.0\n",
+       "3  NaN  3.0  NaN  4.0\n",
+       "\n",
+       "When filling using a DataFrame, replacement happens along\n",
+       "the same column names and same indices\n",
+       "\n",
+       ">>> df2 = pd.DataFrame(np.zeros((4, 4)), columns=list(\"ABCE\"))\n",
+       ">>> df.fillna(df2)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  0.0  0.0\n",
+       "1  3.0  4.0  0.0  1.0\n",
+       "2  0.0  0.0  0.0  NaN\n",
+       "3  0.0  3.0  0.0  4.0\n",
+       "\n",
+       "Note that column D is not affected since it is not present in df2.\n",
+       "\u001b[31mSource:\u001b[39m   \n",
+       "    @final\n",
+       "    @doc(\n",
+       "        klass=_shared_doc_kwargs[\u001b[33m\"klass\"\u001b[39m],\n",
+       "        axes_single_arg=_shared_doc_kwargs[\u001b[33m\"axes_single_arg\"\u001b[39m],\n",
+       "    )\n",
+       "    \u001b[38;5;28;01mdef\u001b[39;00m fillna(\n",
+       "        self,\n",
+       "        value: Hashable | Mapping | Series | DataFrame | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        *,\n",
+       "        method: FillnaOptions | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        axis: Axis | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        inplace: bool_t = \u001b[38;5;28;01mFalse\u001b[39;00m,\n",
+       "        limit: int | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        downcast: dict | \u001b[38;5;28;01mNone\u001b[39;00m | lib.NoDefault = lib.no_default,\n",
+       "    ) -> Self | \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "        \u001b[33m\"\"\"\u001b[39m\n",
+       "\u001b[33m        Fill NA/NaN values using the specified method.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Parameters\u001b[39m\n",
+       "\u001b[33m        ----------\u001b[39m\n",
+       "\u001b[33m        value : scalar, dict, Series, or DataFrame\u001b[39m\n",
+       "\u001b[33m            Value to use to fill holes (e.g. 0), alternately a\u001b[39m\n",
+       "\u001b[33m            dict/Series/DataFrame of values specifying which value to use for\u001b[39m\n",
+       "\u001b[33m            each index (for a Series) or column (for a DataFrame).  Values not\u001b[39m\n",
+       "\u001b[33m            in the dict/Series/DataFrame will not be filled. This value cannot\u001b[39m\n",
+       "\u001b[33m            be a list.\u001b[39m\n",
+       "\u001b[33m        method : {{'backfill', 'bfill', 'ffill', None}}, default None\u001b[39m\n",
+       "\u001b[33m            Method to use for filling holes in reindexed Series:\u001b[39m\n",
+       "\n",
+       "\u001b[33m            * ffill: propagate last valid observation forward to next valid.\u001b[39m\n",
+       "\u001b[33m            * backfill / bfill: use next valid observation to fill gap.\u001b[39m\n",
+       "\n",
+       "\u001b[33m            .. deprecated:: 2.1.0\u001b[39m\n",
+       "\u001b[33m                Use ffill or bfill instead.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        axis : {axes_single_arg}\u001b[39m\n",
+       "\u001b[33m            Axis along which to fill missing values. For `Series`\u001b[39m\n",
+       "\u001b[33m            this parameter is unused and defaults to 0.\u001b[39m\n",
+       "\u001b[33m        inplace : bool, default False\u001b[39m\n",
+       "\u001b[33m            If True, fill in-place. Note: this will modify any\u001b[39m\n",
+       "\u001b[33m            other views on this object (e.g., a no-copy slice for a column in a\u001b[39m\n",
+       "\u001b[33m            DataFrame).\u001b[39m\n",
+       "\u001b[33m        limit : int, default None\u001b[39m\n",
+       "\u001b[33m            If method is specified, this is the maximum number of consecutive\u001b[39m\n",
+       "\u001b[33m            NaN values to forward/backward fill. In other words, if there is\u001b[39m\n",
+       "\u001b[33m            a gap with more than this number of consecutive NaNs, it will only\u001b[39m\n",
+       "\u001b[33m            be partially filled. If method is not specified, this is the\u001b[39m\n",
+       "\u001b[33m            maximum number of entries along the entire axis where NaNs will be\u001b[39m\n",
+       "\u001b[33m            filled. Must be greater than 0 if not None.\u001b[39m\n",
+       "\u001b[33m        downcast : dict, default is None\u001b[39m\n",
+       "\u001b[33m            A dict of item->dtype of what to downcast if possible,\u001b[39m\n",
+       "\u001b[33m            or the string 'infer' which will try to downcast to an appropriate\u001b[39m\n",
+       "\u001b[33m            equal type (e.g. float64 to int64 if possible).\u001b[39m\n",
+       "\n",
+       "\u001b[33m            .. deprecated:: 2.2.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Returns\u001b[39m\n",
+       "\u001b[33m        -------\u001b[39m\n",
+       "\u001b[33m        {klass} or None\u001b[39m\n",
+       "\u001b[33m            Object with missing values filled or None if ``inplace=True``.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        See Also\u001b[39m\n",
+       "\u001b[33m        --------\u001b[39m\n",
+       "\u001b[33m        ffill : Fill values by propagating the last valid observation to next valid.\u001b[39m\n",
+       "\u001b[33m        bfill : Fill values by using the next valid observation to fill the gap.\u001b[39m\n",
+       "\u001b[33m        interpolate : Fill NaN values using interpolation.\u001b[39m\n",
+       "\u001b[33m        reindex : Conform object to new index.\u001b[39m\n",
+       "\u001b[33m        asfreq : Convert TimeSeries to specified frequency.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Examples\u001b[39m\n",
+       "\u001b[33m        --------\u001b[39m\n",
+       "\u001b[33m        >>> df = pd.DataFrame([[np.nan, 2, np.nan, 0],\u001b[39m\n",
+       "\u001b[33m        ...                    [3, 4, np.nan, 1],\u001b[39m\n",
+       "\u001b[33m        ...                    [np.nan, np.nan, np.nan, np.nan],\u001b[39m\n",
+       "\u001b[33m        ...                    [np.nan, 3, np.nan, 4]],\u001b[39m\n",
+       "\u001b[33m        ...                   columns=list(\"ABCD\"))\u001b[39m\n",
+       "\u001b[33m        >>> df\u001b[39m\n",
+       "\u001b[33m             A    B   C    D\u001b[39m\n",
+       "\u001b[33m        0  NaN  2.0 NaN  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0 NaN  1.0\u001b[39m\n",
+       "\u001b[33m        2  NaN  NaN NaN  NaN\u001b[39m\n",
+       "\u001b[33m        3  NaN  3.0 NaN  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Replace all NaN elements with 0s.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> df.fillna(0)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  0.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  0.0  1.0\u001b[39m\n",
+       "\u001b[33m        2  0.0  0.0  0.0  0.0\u001b[39m\n",
+       "\u001b[33m        3  0.0  3.0  0.0  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Replace all NaN elements in column 'A', 'B', 'C', and 'D', with 0, 1,\u001b[39m\n",
+       "\u001b[33m        2, and 3 respectively.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> values = {{\"A\": 0, \"B\": 1, \"C\": 2, \"D\": 3}}\u001b[39m\n",
+       "\u001b[33m        >>> df.fillna(value=values)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  2.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  2.0  1.0\u001b[39m\n",
+       "\u001b[33m        2  0.0  1.0  2.0  3.0\u001b[39m\n",
+       "\u001b[33m        3  0.0  3.0  2.0  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Only replace the first NaN element.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> df.fillna(value=values, limit=1)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  2.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  NaN  1.0\u001b[39m\n",
+       "\u001b[33m        2  NaN  1.0  NaN  3.0\u001b[39m\n",
+       "\u001b[33m        3  NaN  3.0  NaN  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        When filling using a DataFrame, replacement happens along\u001b[39m\n",
+       "\u001b[33m        the same column names and same indices\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> df2 = pd.DataFrame(np.zeros((4, 4)), columns=list(\"ABCE\"))\u001b[39m\n",
+       "\u001b[33m        >>> df.fillna(df2)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  0.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  0.0  1.0\u001b[39m\n",
+       "\u001b[33m        2  0.0  0.0  0.0  NaN\u001b[39m\n",
+       "\u001b[33m        3  0.0  3.0  0.0  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Note that column D is not affected since it is not present in df2.\u001b[39m\n",
+       "\u001b[33m        \"\"\"\u001b[39m\n",
+       "        inplace = validate_bool_kwarg(inplace, \u001b[33m\"inplace\"\u001b[39m)\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "            \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m PYPY \u001b[38;5;28;01mand\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m WARNING_CHECK_DISABLED \u001b[38;5;28;01mand\u001b[39;00m using_copy_on_write():\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m sys.getrefcount(self) <= REF_COUNT:\n",
+       "                    warnings.warn(\n",
+       "                        _chained_assignment_method_msg,\n",
+       "                        ChainedAssignmentError,\n",
+       "                        stacklevel=\u001b[32m2\u001b[39m,\n",
+       "                    )\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m (\n",
+       "                \u001b[38;5;28;01mnot\u001b[39;00m PYPY\n",
+       "                \u001b[38;5;28;01mand\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m WARNING_CHECK_DISABLED\n",
+       "                \u001b[38;5;28;01mand\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m using_copy_on_write()\n",
+       "                \u001b[38;5;28;01mand\u001b[39;00m self._is_view_after_cow_rules()\n",
+       "            ):\n",
+       "                ctr = sys.getrefcount(self)\n",
+       "                ref_count = REF_COUNT\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m isinstance(self, ABCSeries) \u001b[38;5;28;01mand\u001b[39;00m _check_cacher(self):\n",
+       "                    \u001b[38;5;66;03m# see https://github.com/pandas-dev/pandas/pull/56060#discussion_r1399245221\u001b[39;00m\n",
+       "                    ref_count += \u001b[32m1\u001b[39m\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m ctr <= ref_count:\n",
+       "                    warnings.warn(\n",
+       "                        _chained_assignment_warning_method_msg,\n",
+       "                        FutureWarning,\n",
+       "                        stacklevel=\u001b[32m2\u001b[39m,\n",
+       "                    )\n",
+       "\n",
+       "        value, method = validate_fillna_kwargs(value, method)\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m method \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "            warnings.warn(\n",
+       "                f\"{type(self).__name__}.fillna with 'method' is deprecated and \"\n",
+       "                \u001b[33m\"will raise in a future version. Use obj.ffill() or obj.bfill() \"\u001b[39m\n",
+       "                \u001b[33m\"instead.\"\u001b[39m,\n",
+       "                FutureWarning,\n",
+       "                stacklevel=find_stack_level(),\n",
+       "            )\n",
+       "\n",
+       "        was_no_default = downcast \u001b[38;5;28;01mis\u001b[39;00m lib.no_default\n",
+       "        downcast = self._deprecate_downcast(downcast, \u001b[33m\"fillna\"\u001b[39m)\n",
+       "\n",
+       "        \u001b[38;5;66;03m# set the default here, so functions examining the signaure\u001b[39;00m\n",
+       "        \u001b[38;5;66;03m# can detect if something was set (e.g. in groupby) (GH9221)\u001b[39;00m\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m axis \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "            axis = \u001b[32m0\u001b[39m\n",
+       "        axis = self._get_axis_number(axis)\n",
+       "\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m value \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "            \u001b[38;5;28;01mreturn\u001b[39;00m self._pad_or_backfill(\n",
+       "                \u001b[38;5;66;03m# error: Argument 1 to \"_pad_or_backfill\" of \"NDFrame\" has\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# incompatible type \"Optional[Literal['backfill', 'bfill', 'ffill',\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# 'pad']]\"; expected \"Literal['ffill', 'bfill', 'pad', 'backfill']\"\u001b[39;00m\n",
+       "                method,  \u001b[38;5;66;03m# type: ignore[arg-type]\u001b[39;00m\n",
+       "                axis=axis,\n",
+       "                limit=limit,\n",
+       "                inplace=inplace,\n",
+       "                \u001b[38;5;66;03m# error: Argument \"downcast\" to \"_fillna_with_method\" of \"NDFrame\"\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# has incompatible type \"Union[Dict[Any, Any], None,\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# Literal[_NoDefault.no_default]]\"; expected\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# \"Optional[Dict[Any, Any]]\"\u001b[39;00m\n",
+       "                downcast=downcast,  \u001b[38;5;66;03m# type: ignore[arg-type]\u001b[39;00m\n",
+       "            )\n",
+       "        \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "            \u001b[38;5;28;01mif\u001b[39;00m self.ndim == \u001b[32m1\u001b[39m:\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m isinstance(value, (dict, ABCSeries)):\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m len(value):\n",
+       "                        \u001b[38;5;66;03m# test_fillna_nonscalar\u001b[39;00m\n",
+       "                        \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "                            \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m\n",
+       "                        \u001b[38;5;28;01mreturn\u001b[39;00m self.copy(deep=\u001b[38;5;28;01mNone\u001b[39;00m)\n",
+       "                    \u001b[38;5;28;01mfrom\u001b[39;00m pandas \u001b[38;5;28;01mimport\u001b[39;00m Series\n",
+       "\n",
+       "                    value = Series(value)\n",
+       "                    value = value.reindex(self.index, copy=\u001b[38;5;28;01mFalse\u001b[39;00m)\n",
+       "                    value = value._values\n",
+       "                \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m is_list_like(value):\n",
+       "                    \u001b[38;5;28;01mpass\u001b[39;00m\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    \u001b[38;5;28;01mraise\u001b[39;00m TypeError(\n",
+       "                        \u001b[33m'\"value\" parameter must be a scalar, dict '\u001b[39m\n",
+       "                        \u001b[33m\"or Series, but you passed a \"\u001b[39m\n",
+       "                        f'\"{type(value).__name__}\"'\n",
+       "                    )\n",
+       "\n",
+       "                new_data = self._mgr.fillna(\n",
+       "                    value=value, limit=limit, inplace=inplace, downcast=downcast\n",
+       "                )\n",
+       "\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m isinstance(value, (dict, ABCSeries)):\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m axis == \u001b[32m1\u001b[39m:\n",
+       "                    \u001b[38;5;28;01mraise\u001b[39;00m NotImplementedError(\n",
+       "                        \u001b[33m\"Currently only can fill \"\u001b[39m\n",
+       "                        \u001b[33m\"with dict/Series column \"\u001b[39m\n",
+       "                        \u001b[33m\"by column\"\u001b[39m\n",
+       "                    )\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m using_copy_on_write():\n",
+       "                    result = self.copy(deep=\u001b[38;5;28;01mNone\u001b[39;00m)\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    result = self \u001b[38;5;28;01mif\u001b[39;00m inplace \u001b[38;5;28;01melse\u001b[39;00m self.copy()\n",
+       "                is_dict = isinstance(downcast, dict)\n",
+       "                \u001b[38;5;28;01mfor\u001b[39;00m k, v \u001b[38;5;28;01min\u001b[39;00m value.items():\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m k \u001b[38;5;28;01mnot\u001b[39;00m \u001b[38;5;28;01min\u001b[39;00m result:\n",
+       "                        \u001b[38;5;28;01mcontinue\u001b[39;00m\n",
+       "\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m was_no_default:\n",
+       "                        downcast_k = lib.no_default\n",
+       "                    \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                        downcast_k = (\n",
+       "                            \u001b[38;5;66;03m# error: Incompatible types in assignment (expression\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# has type \"Union[Dict[Any, Any], None,\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# Literal[_NoDefault.no_default], Any]\", variable has\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# type \"_NoDefault\")\u001b[39;00m\n",
+       "                            downcast  \u001b[38;5;66;03m# type: ignore[assignment]\u001b[39;00m\n",
+       "                            \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m is_dict\n",
+       "                            \u001b[38;5;66;03m# error: Item \"None\" of \"Optional[Dict[Any, Any]]\" has\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# no attribute \"get\"\u001b[39;00m\n",
+       "                            \u001b[38;5;28;01melse\u001b[39;00m downcast.get(k)  \u001b[38;5;66;03m# type: ignore[union-attr]\u001b[39;00m\n",
+       "                        )\n",
+       "\n",
+       "                    res_k = result[k].fillna(v, limit=limit, downcast=downcast_k)\n",
+       "\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m inplace:\n",
+       "                        result[k] = res_k\n",
+       "                    \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                        \u001b[38;5;66;03m# We can write into our existing column(s) iff dtype\u001b[39;00m\n",
+       "                        \u001b[38;5;66;03m#  was preserved.\u001b[39;00m\n",
+       "                        \u001b[38;5;28;01mif\u001b[39;00m isinstance(res_k, ABCSeries):\n",
+       "                            \u001b[38;5;66;03m# i.e. 'k' only shows up once in self.columns\u001b[39;00m\n",
+       "                            \u001b[38;5;28;01mif\u001b[39;00m res_k.dtype == result[k].dtype:\n",
+       "                                result.loc[:, k] = res_k\n",
+       "                            \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                                \u001b[38;5;66;03m# Different dtype -> no way to do inplace.\u001b[39;00m\n",
+       "                                result[k] = res_k\n",
+       "                        \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                            \u001b[38;5;66;03m# see test_fillna_dict_inplace_nonunique_columns\u001b[39;00m\n",
+       "                            locs = result.columns.get_loc(k)\n",
+       "                            \u001b[38;5;28;01mif\u001b[39;00m isinstance(locs, slice):\n",
+       "                                locs = np.arange(self.shape[\u001b[32m1\u001b[39m])[locs]\n",
+       "                            \u001b[38;5;28;01melif\u001b[39;00m (\n",
+       "                                isinstance(locs, np.ndarray) \u001b[38;5;28;01mand\u001b[39;00m locs.dtype.kind == \u001b[33m\"b\"\u001b[39m\n",
+       "                            ):\n",
+       "                                locs = locs.nonzero()[\u001b[32m0\u001b[39m]\n",
+       "                            \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m (\n",
+       "                                isinstance(locs, np.ndarray) \u001b[38;5;28;01mand\u001b[39;00m locs.dtype.kind == \u001b[33m\"i\"\u001b[39m\n",
+       "                            ):\n",
+       "                                \u001b[38;5;66;03m# Should never be reached, but let's cover our bases\u001b[39;00m\n",
+       "                                \u001b[38;5;28;01mraise\u001b[39;00m NotImplementedError(\n",
+       "                                    \u001b[33m\"Unexpected get_loc result, please report a bug at \"\u001b[39m\n",
+       "                                    \u001b[33m\"https://github.com/pandas-dev/pandas\"\u001b[39m\n",
+       "                                )\n",
+       "\n",
+       "                            \u001b[38;5;28;01mfor\u001b[39;00m i, loc \u001b[38;5;28;01min\u001b[39;00m enumerate(locs):\n",
+       "                                res_loc = res_k.iloc[:, i]\n",
+       "                                target = self.iloc[:, loc]\n",
+       "\n",
+       "                                \u001b[38;5;28;01mif\u001b[39;00m res_loc.dtype == target.dtype:\n",
+       "                                    result.iloc[:, loc] = res_loc\n",
+       "                                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                                    result.isetitem(loc, res_loc)\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "                    \u001b[38;5;28;01mreturn\u001b[39;00m self._update_inplace(result)\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    \u001b[38;5;28;01mreturn\u001b[39;00m result\n",
+       "\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m is_list_like(value):\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m axis == \u001b[32m1\u001b[39m:\n",
+       "                    result = self.T.fillna(value=value, limit=limit).T\n",
+       "                    new_data = result._mgr\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    new_data = self._mgr.fillna(\n",
+       "                        value=value, limit=limit, inplace=inplace, downcast=downcast\n",
+       "                    )\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m isinstance(value, ABCDataFrame) \u001b[38;5;28;01mand\u001b[39;00m self.ndim == \u001b[32m2\u001b[39m:\n",
+       "                new_data = self.where(self.notna(), value)._mgr\n",
+       "            \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                \u001b[38;5;28;01mraise\u001b[39;00m ValueError(f\"invalid fill value with a {type(value)}\")\n",
+       "\n",
+       "        result = self._constructor_from_mgr(new_data, axes=new_data.axes)\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "            \u001b[38;5;28;01mreturn\u001b[39;00m self._update_inplace(result)\n",
+       "        \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "            \u001b[38;5;28;01mreturn\u001b[39;00m result.__finalize__(self, method=\u001b[33m\"fillna\"\u001b[39m)\n",
+       "\u001b[31mFile:\u001b[39m      c:\\users\\acer\\anaconda3\\lib\\site-packages\\pandas\\core\\generic.py\n",
+       "\u001b[31mType:\u001b[39m      method"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df.fillna??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "id": "50b9960a-7f32-4b6a-8843-59c311a67824",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\acer\\AppData\\Local\\Temp\\ipykernel_1896\\2171742998.py:1: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\n",
+      "The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n",
+      "\n",
+      "For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n",
+      "\n",
+      "\n",
+      "  df['A'].fillna(value = df['A'].mean(), inplace = True)\n"
+     ]
+    }
+   ],
+   "source": [
+    "df['A'].fillna(value = df['A'].mean(), inplace = True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "id": "55d9172f-5e0b-47f3-9826-cc5d79f410b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>1.5</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1\n",
+       "1  2.0  NaN  2\n",
+       "2  1.5  NaN  3"
+      ]
+     },
+     "execution_count": 128,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "id": "99eaf94a-4f0e-4061-a57b-fde29269c702",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "\u001b[31mSignature:\u001b[39m\n",
+       "df.fillna(\n",
+       "    value: \u001b[33m'Hashable | Mapping | Series | DataFrame | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    *,\n",
+       "    method: \u001b[33m'FillnaOptions | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    axis: \u001b[33m'Axis | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    inplace: \u001b[33m'bool_t'\u001b[39m = \u001b[38;5;28;01mFalse\u001b[39;00m,\n",
+       "    limit: \u001b[33m'int | None'\u001b[39m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "    downcast: \u001b[33m'dict | None | lib.NoDefault'\u001b[39m = <no_default>,\n",
+       ") -> \u001b[33m'Self | None'\u001b[39m\n",
+       "\u001b[31mDocstring:\u001b[39m\n",
+       "Fill NA/NaN values using the specified method.\n",
+       "\n",
+       "Parameters\n",
+       "----------\n",
+       "value : scalar, dict, Series, or DataFrame\n",
+       "    Value to use to fill holes (e.g. 0), alternately a\n",
+       "    dict/Series/DataFrame of values specifying which value to use for\n",
+       "    each index (for a Series) or column (for a DataFrame).  Values not\n",
+       "    in the dict/Series/DataFrame will not be filled. This value cannot\n",
+       "    be a list.\n",
+       "method : {'backfill', 'bfill', 'ffill', None}, default None\n",
+       "    Method to use for filling holes in reindexed Series:\n",
+       "\n",
+       "    * ffill: propagate last valid observation forward to next valid.\n",
+       "    * backfill / bfill: use next valid observation to fill gap.\n",
+       "\n",
+       "    .. deprecated:: 2.1.0\n",
+       "        Use ffill or bfill instead.\n",
+       "\n",
+       "axis : {0 or 'index'} for Series, {0 or 'index', 1 or 'columns'} for DataFrame\n",
+       "    Axis along which to fill missing values. For `Series`\n",
+       "    this parameter is unused and defaults to 0.\n",
+       "inplace : bool, default False\n",
+       "    If True, fill in-place. Note: this will modify any\n",
+       "    other views on this object (e.g., a no-copy slice for a column in a\n",
+       "    DataFrame).\n",
+       "limit : int, default None\n",
+       "    If method is specified, this is the maximum number of consecutive\n",
+       "    NaN values to forward/backward fill. In other words, if there is\n",
+       "    a gap with more than this number of consecutive NaNs, it will only\n",
+       "    be partially filled. If method is not specified, this is the\n",
+       "    maximum number of entries along the entire axis where NaNs will be\n",
+       "    filled. Must be greater than 0 if not None.\n",
+       "downcast : dict, default is None\n",
+       "    A dict of item->dtype of what to downcast if possible,\n",
+       "    or the string 'infer' which will try to downcast to an appropriate\n",
+       "    equal type (e.g. float64 to int64 if possible).\n",
+       "\n",
+       "    .. deprecated:: 2.2.0\n",
+       "\n",
+       "Returns\n",
+       "-------\n",
+       "Series/DataFrame or None\n",
+       "    Object with missing values filled or None if ``inplace=True``.\n",
+       "\n",
+       "See Also\n",
+       "--------\n",
+       "ffill : Fill values by propagating the last valid observation to next valid.\n",
+       "bfill : Fill values by using the next valid observation to fill the gap.\n",
+       "interpolate : Fill NaN values using interpolation.\n",
+       "reindex : Conform object to new index.\n",
+       "asfreq : Convert TimeSeries to specified frequency.\n",
+       "\n",
+       "Examples\n",
+       "--------\n",
+       ">>> df = pd.DataFrame([[np.nan, 2, np.nan, 0],\n",
+       "...                    [3, 4, np.nan, 1],\n",
+       "...                    [np.nan, np.nan, np.nan, np.nan],\n",
+       "...                    [np.nan, 3, np.nan, 4]],\n",
+       "...                   columns=list(\"ABCD\"))\n",
+       ">>> df\n",
+       "     A    B   C    D\n",
+       "0  NaN  2.0 NaN  0.0\n",
+       "1  3.0  4.0 NaN  1.0\n",
+       "2  NaN  NaN NaN  NaN\n",
+       "3  NaN  3.0 NaN  4.0\n",
+       "\n",
+       "Replace all NaN elements with 0s.\n",
+       "\n",
+       ">>> df.fillna(0)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  0.0  0.0\n",
+       "1  3.0  4.0  0.0  1.0\n",
+       "2  0.0  0.0  0.0  0.0\n",
+       "3  0.0  3.0  0.0  4.0\n",
+       "\n",
+       "Replace all NaN elements in column 'A', 'B', 'C', and 'D', with 0, 1,\n",
+       "2, and 3 respectively.\n",
+       "\n",
+       ">>> values = {\"A\": 0, \"B\": 1, \"C\": 2, \"D\": 3}\n",
+       ">>> df.fillna(value=values)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  2.0  0.0\n",
+       "1  3.0  4.0  2.0  1.0\n",
+       "2  0.0  1.0  2.0  3.0\n",
+       "3  0.0  3.0  2.0  4.0\n",
+       "\n",
+       "Only replace the first NaN element.\n",
+       "\n",
+       ">>> df.fillna(value=values, limit=1)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  2.0  0.0\n",
+       "1  3.0  4.0  NaN  1.0\n",
+       "2  NaN  1.0  NaN  3.0\n",
+       "3  NaN  3.0  NaN  4.0\n",
+       "\n",
+       "When filling using a DataFrame, replacement happens along\n",
+       "the same column names and same indices\n",
+       "\n",
+       ">>> df2 = pd.DataFrame(np.zeros((4, 4)), columns=list(\"ABCE\"))\n",
+       ">>> df.fillna(df2)\n",
+       "     A    B    C    D\n",
+       "0  0.0  2.0  0.0  0.0\n",
+       "1  3.0  4.0  0.0  1.0\n",
+       "2  0.0  0.0  0.0  NaN\n",
+       "3  0.0  3.0  0.0  4.0\n",
+       "\n",
+       "Note that column D is not affected since it is not present in df2.\n",
+       "\u001b[31mSource:\u001b[39m   \n",
+       "    @final\n",
+       "    @doc(\n",
+       "        klass=_shared_doc_kwargs[\u001b[33m\"klass\"\u001b[39m],\n",
+       "        axes_single_arg=_shared_doc_kwargs[\u001b[33m\"axes_single_arg\"\u001b[39m],\n",
+       "    )\n",
+       "    \u001b[38;5;28;01mdef\u001b[39;00m fillna(\n",
+       "        self,\n",
+       "        value: Hashable | Mapping | Series | DataFrame | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        *,\n",
+       "        method: FillnaOptions | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        axis: Axis | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        inplace: bool_t = \u001b[38;5;28;01mFalse\u001b[39;00m,\n",
+       "        limit: int | \u001b[38;5;28;01mNone\u001b[39;00m = \u001b[38;5;28;01mNone\u001b[39;00m,\n",
+       "        downcast: dict | \u001b[38;5;28;01mNone\u001b[39;00m | lib.NoDefault = lib.no_default,\n",
+       "    ) -> Self | \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "        \u001b[33m\"\"\"\u001b[39m\n",
+       "\u001b[33m        Fill NA/NaN values using the specified method.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Parameters\u001b[39m\n",
+       "\u001b[33m        ----------\u001b[39m\n",
+       "\u001b[33m        value : scalar, dict, Series, or DataFrame\u001b[39m\n",
+       "\u001b[33m            Value to use to fill holes (e.g. 0), alternately a\u001b[39m\n",
+       "\u001b[33m            dict/Series/DataFrame of values specifying which value to use for\u001b[39m\n",
+       "\u001b[33m            each index (for a Series) or column (for a DataFrame).  Values not\u001b[39m\n",
+       "\u001b[33m            in the dict/Series/DataFrame will not be filled. This value cannot\u001b[39m\n",
+       "\u001b[33m            be a list.\u001b[39m\n",
+       "\u001b[33m        method : {{'backfill', 'bfill', 'ffill', None}}, default None\u001b[39m\n",
+       "\u001b[33m            Method to use for filling holes in reindexed Series:\u001b[39m\n",
+       "\n",
+       "\u001b[33m            * ffill: propagate last valid observation forward to next valid.\u001b[39m\n",
+       "\u001b[33m            * backfill / bfill: use next valid observation to fill gap.\u001b[39m\n",
+       "\n",
+       "\u001b[33m            .. deprecated:: 2.1.0\u001b[39m\n",
+       "\u001b[33m                Use ffill or bfill instead.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        axis : {axes_single_arg}\u001b[39m\n",
+       "\u001b[33m            Axis along which to fill missing values. For `Series`\u001b[39m\n",
+       "\u001b[33m            this parameter is unused and defaults to 0.\u001b[39m\n",
+       "\u001b[33m        inplace : bool, default False\u001b[39m\n",
+       "\u001b[33m            If True, fill in-place. Note: this will modify any\u001b[39m\n",
+       "\u001b[33m            other views on this object (e.g., a no-copy slice for a column in a\u001b[39m\n",
+       "\u001b[33m            DataFrame).\u001b[39m\n",
+       "\u001b[33m        limit : int, default None\u001b[39m\n",
+       "\u001b[33m            If method is specified, this is the maximum number of consecutive\u001b[39m\n",
+       "\u001b[33m            NaN values to forward/backward fill. In other words, if there is\u001b[39m\n",
+       "\u001b[33m            a gap with more than this number of consecutive NaNs, it will only\u001b[39m\n",
+       "\u001b[33m            be partially filled. If method is not specified, this is the\u001b[39m\n",
+       "\u001b[33m            maximum number of entries along the entire axis where NaNs will be\u001b[39m\n",
+       "\u001b[33m            filled. Must be greater than 0 if not None.\u001b[39m\n",
+       "\u001b[33m        downcast : dict, default is None\u001b[39m\n",
+       "\u001b[33m            A dict of item->dtype of what to downcast if possible,\u001b[39m\n",
+       "\u001b[33m            or the string 'infer' which will try to downcast to an appropriate\u001b[39m\n",
+       "\u001b[33m            equal type (e.g. float64 to int64 if possible).\u001b[39m\n",
+       "\n",
+       "\u001b[33m            .. deprecated:: 2.2.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Returns\u001b[39m\n",
+       "\u001b[33m        -------\u001b[39m\n",
+       "\u001b[33m        {klass} or None\u001b[39m\n",
+       "\u001b[33m            Object with missing values filled or None if ``inplace=True``.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        See Also\u001b[39m\n",
+       "\u001b[33m        --------\u001b[39m\n",
+       "\u001b[33m        ffill : Fill values by propagating the last valid observation to next valid.\u001b[39m\n",
+       "\u001b[33m        bfill : Fill values by using the next valid observation to fill the gap.\u001b[39m\n",
+       "\u001b[33m        interpolate : Fill NaN values using interpolation.\u001b[39m\n",
+       "\u001b[33m        reindex : Conform object to new index.\u001b[39m\n",
+       "\u001b[33m        asfreq : Convert TimeSeries to specified frequency.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Examples\u001b[39m\n",
+       "\u001b[33m        --------\u001b[39m\n",
+       "\u001b[33m        >>> df = pd.DataFrame([[np.nan, 2, np.nan, 0],\u001b[39m\n",
+       "\u001b[33m        ...                    [3, 4, np.nan, 1],\u001b[39m\n",
+       "\u001b[33m        ...                    [np.nan, np.nan, np.nan, np.nan],\u001b[39m\n",
+       "\u001b[33m        ...                    [np.nan, 3, np.nan, 4]],\u001b[39m\n",
+       "\u001b[33m        ...                   columns=list(\"ABCD\"))\u001b[39m\n",
+       "\u001b[33m        >>> df\u001b[39m\n",
+       "\u001b[33m             A    B   C    D\u001b[39m\n",
+       "\u001b[33m        0  NaN  2.0 NaN  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0 NaN  1.0\u001b[39m\n",
+       "\u001b[33m        2  NaN  NaN NaN  NaN\u001b[39m\n",
+       "\u001b[33m        3  NaN  3.0 NaN  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Replace all NaN elements with 0s.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> df.fillna(0)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  0.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  0.0  1.0\u001b[39m\n",
+       "\u001b[33m        2  0.0  0.0  0.0  0.0\u001b[39m\n",
+       "\u001b[33m        3  0.0  3.0  0.0  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Replace all NaN elements in column 'A', 'B', 'C', and 'D', with 0, 1,\u001b[39m\n",
+       "\u001b[33m        2, and 3 respectively.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> values = {{\"A\": 0, \"B\": 1, \"C\": 2, \"D\": 3}}\u001b[39m\n",
+       "\u001b[33m        >>> df.fillna(value=values)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  2.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  2.0  1.0\u001b[39m\n",
+       "\u001b[33m        2  0.0  1.0  2.0  3.0\u001b[39m\n",
+       "\u001b[33m        3  0.0  3.0  2.0  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Only replace the first NaN element.\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> df.fillna(value=values, limit=1)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  2.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  NaN  1.0\u001b[39m\n",
+       "\u001b[33m        2  NaN  1.0  NaN  3.0\u001b[39m\n",
+       "\u001b[33m        3  NaN  3.0  NaN  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        When filling using a DataFrame, replacement happens along\u001b[39m\n",
+       "\u001b[33m        the same column names and same indices\u001b[39m\n",
+       "\n",
+       "\u001b[33m        >>> df2 = pd.DataFrame(np.zeros((4, 4)), columns=list(\"ABCE\"))\u001b[39m\n",
+       "\u001b[33m        >>> df.fillna(df2)\u001b[39m\n",
+       "\u001b[33m             A    B    C    D\u001b[39m\n",
+       "\u001b[33m        0  0.0  2.0  0.0  0.0\u001b[39m\n",
+       "\u001b[33m        1  3.0  4.0  0.0  1.0\u001b[39m\n",
+       "\u001b[33m        2  0.0  0.0  0.0  NaN\u001b[39m\n",
+       "\u001b[33m        3  0.0  3.0  0.0  4.0\u001b[39m\n",
+       "\n",
+       "\u001b[33m        Note that column D is not affected since it is not present in df2.\u001b[39m\n",
+       "\u001b[33m        \"\"\"\u001b[39m\n",
+       "        inplace = validate_bool_kwarg(inplace, \u001b[33m\"inplace\"\u001b[39m)\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "            \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m PYPY \u001b[38;5;28;01mand\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m WARNING_CHECK_DISABLED \u001b[38;5;28;01mand\u001b[39;00m using_copy_on_write():\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m sys.getrefcount(self) <= REF_COUNT:\n",
+       "                    warnings.warn(\n",
+       "                        _chained_assignment_method_msg,\n",
+       "                        ChainedAssignmentError,\n",
+       "                        stacklevel=\u001b[32m2\u001b[39m,\n",
+       "                    )\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m (\n",
+       "                \u001b[38;5;28;01mnot\u001b[39;00m PYPY\n",
+       "                \u001b[38;5;28;01mand\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m WARNING_CHECK_DISABLED\n",
+       "                \u001b[38;5;28;01mand\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m using_copy_on_write()\n",
+       "                \u001b[38;5;28;01mand\u001b[39;00m self._is_view_after_cow_rules()\n",
+       "            ):\n",
+       "                ctr = sys.getrefcount(self)\n",
+       "                ref_count = REF_COUNT\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m isinstance(self, ABCSeries) \u001b[38;5;28;01mand\u001b[39;00m _check_cacher(self):\n",
+       "                    \u001b[38;5;66;03m# see https://github.com/pandas-dev/pandas/pull/56060#discussion_r1399245221\u001b[39;00m\n",
+       "                    ref_count += \u001b[32m1\u001b[39m\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m ctr <= ref_count:\n",
+       "                    warnings.warn(\n",
+       "                        _chained_assignment_warning_method_msg,\n",
+       "                        FutureWarning,\n",
+       "                        stacklevel=\u001b[32m2\u001b[39m,\n",
+       "                    )\n",
+       "\n",
+       "        value, method = validate_fillna_kwargs(value, method)\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m method \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "            warnings.warn(\n",
+       "                f\"{type(self).__name__}.fillna with 'method' is deprecated and \"\n",
+       "                \u001b[33m\"will raise in a future version. Use obj.ffill() or obj.bfill() \"\u001b[39m\n",
+       "                \u001b[33m\"instead.\"\u001b[39m,\n",
+       "                FutureWarning,\n",
+       "                stacklevel=find_stack_level(),\n",
+       "            )\n",
+       "\n",
+       "        was_no_default = downcast \u001b[38;5;28;01mis\u001b[39;00m lib.no_default\n",
+       "        downcast = self._deprecate_downcast(downcast, \u001b[33m\"fillna\"\u001b[39m)\n",
+       "\n",
+       "        \u001b[38;5;66;03m# set the default here, so functions examining the signaure\u001b[39;00m\n",
+       "        \u001b[38;5;66;03m# can detect if something was set (e.g. in groupby) (GH9221)\u001b[39;00m\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m axis \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "            axis = \u001b[32m0\u001b[39m\n",
+       "        axis = self._get_axis_number(axis)\n",
+       "\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m value \u001b[38;5;28;01mis\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m:\n",
+       "            \u001b[38;5;28;01mreturn\u001b[39;00m self._pad_or_backfill(\n",
+       "                \u001b[38;5;66;03m# error: Argument 1 to \"_pad_or_backfill\" of \"NDFrame\" has\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# incompatible type \"Optional[Literal['backfill', 'bfill', 'ffill',\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# 'pad']]\"; expected \"Literal['ffill', 'bfill', 'pad', 'backfill']\"\u001b[39;00m\n",
+       "                method,  \u001b[38;5;66;03m# type: ignore[arg-type]\u001b[39;00m\n",
+       "                axis=axis,\n",
+       "                limit=limit,\n",
+       "                inplace=inplace,\n",
+       "                \u001b[38;5;66;03m# error: Argument \"downcast\" to \"_fillna_with_method\" of \"NDFrame\"\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# has incompatible type \"Union[Dict[Any, Any], None,\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# Literal[_NoDefault.no_default]]\"; expected\u001b[39;00m\n",
+       "                \u001b[38;5;66;03m# \"Optional[Dict[Any, Any]]\"\u001b[39;00m\n",
+       "                downcast=downcast,  \u001b[38;5;66;03m# type: ignore[arg-type]\u001b[39;00m\n",
+       "            )\n",
+       "        \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "            \u001b[38;5;28;01mif\u001b[39;00m self.ndim == \u001b[32m1\u001b[39m:\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m isinstance(value, (dict, ABCSeries)):\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m len(value):\n",
+       "                        \u001b[38;5;66;03m# test_fillna_nonscalar\u001b[39;00m\n",
+       "                        \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "                            \u001b[38;5;28;01mreturn\u001b[39;00m \u001b[38;5;28;01mNone\u001b[39;00m\n",
+       "                        \u001b[38;5;28;01mreturn\u001b[39;00m self.copy(deep=\u001b[38;5;28;01mNone\u001b[39;00m)\n",
+       "                    \u001b[38;5;28;01mfrom\u001b[39;00m pandas \u001b[38;5;28;01mimport\u001b[39;00m Series\n",
+       "\n",
+       "                    value = Series(value)\n",
+       "                    value = value.reindex(self.index, copy=\u001b[38;5;28;01mFalse\u001b[39;00m)\n",
+       "                    value = value._values\n",
+       "                \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m is_list_like(value):\n",
+       "                    \u001b[38;5;28;01mpass\u001b[39;00m\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    \u001b[38;5;28;01mraise\u001b[39;00m TypeError(\n",
+       "                        \u001b[33m'\"value\" parameter must be a scalar, dict '\u001b[39m\n",
+       "                        \u001b[33m\"or Series, but you passed a \"\u001b[39m\n",
+       "                        f'\"{type(value).__name__}\"'\n",
+       "                    )\n",
+       "\n",
+       "                new_data = self._mgr.fillna(\n",
+       "                    value=value, limit=limit, inplace=inplace, downcast=downcast\n",
+       "                )\n",
+       "\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m isinstance(value, (dict, ABCSeries)):\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m axis == \u001b[32m1\u001b[39m:\n",
+       "                    \u001b[38;5;28;01mraise\u001b[39;00m NotImplementedError(\n",
+       "                        \u001b[33m\"Currently only can fill \"\u001b[39m\n",
+       "                        \u001b[33m\"with dict/Series column \"\u001b[39m\n",
+       "                        \u001b[33m\"by column\"\u001b[39m\n",
+       "                    )\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m using_copy_on_write():\n",
+       "                    result = self.copy(deep=\u001b[38;5;28;01mNone\u001b[39;00m)\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    result = self \u001b[38;5;28;01mif\u001b[39;00m inplace \u001b[38;5;28;01melse\u001b[39;00m self.copy()\n",
+       "                is_dict = isinstance(downcast, dict)\n",
+       "                \u001b[38;5;28;01mfor\u001b[39;00m k, v \u001b[38;5;28;01min\u001b[39;00m value.items():\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m k \u001b[38;5;28;01mnot\u001b[39;00m \u001b[38;5;28;01min\u001b[39;00m result:\n",
+       "                        \u001b[38;5;28;01mcontinue\u001b[39;00m\n",
+       "\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m was_no_default:\n",
+       "                        downcast_k = lib.no_default\n",
+       "                    \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                        downcast_k = (\n",
+       "                            \u001b[38;5;66;03m# error: Incompatible types in assignment (expression\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# has type \"Union[Dict[Any, Any], None,\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# Literal[_NoDefault.no_default], Any]\", variable has\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# type \"_NoDefault\")\u001b[39;00m\n",
+       "                            downcast  \u001b[38;5;66;03m# type: ignore[assignment]\u001b[39;00m\n",
+       "                            \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m is_dict\n",
+       "                            \u001b[38;5;66;03m# error: Item \"None\" of \"Optional[Dict[Any, Any]]\" has\u001b[39;00m\n",
+       "                            \u001b[38;5;66;03m# no attribute \"get\"\u001b[39;00m\n",
+       "                            \u001b[38;5;28;01melse\u001b[39;00m downcast.get(k)  \u001b[38;5;66;03m# type: ignore[union-attr]\u001b[39;00m\n",
+       "                        )\n",
+       "\n",
+       "                    res_k = result[k].fillna(v, limit=limit, downcast=downcast_k)\n",
+       "\n",
+       "                    \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m inplace:\n",
+       "                        result[k] = res_k\n",
+       "                    \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                        \u001b[38;5;66;03m# We can write into our existing column(s) iff dtype\u001b[39;00m\n",
+       "                        \u001b[38;5;66;03m#  was preserved.\u001b[39;00m\n",
+       "                        \u001b[38;5;28;01mif\u001b[39;00m isinstance(res_k, ABCSeries):\n",
+       "                            \u001b[38;5;66;03m# i.e. 'k' only shows up once in self.columns\u001b[39;00m\n",
+       "                            \u001b[38;5;28;01mif\u001b[39;00m res_k.dtype == result[k].dtype:\n",
+       "                                result.loc[:, k] = res_k\n",
+       "                            \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                                \u001b[38;5;66;03m# Different dtype -> no way to do inplace.\u001b[39;00m\n",
+       "                                result[k] = res_k\n",
+       "                        \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                            \u001b[38;5;66;03m# see test_fillna_dict_inplace_nonunique_columns\u001b[39;00m\n",
+       "                            locs = result.columns.get_loc(k)\n",
+       "                            \u001b[38;5;28;01mif\u001b[39;00m isinstance(locs, slice):\n",
+       "                                locs = np.arange(self.shape[\u001b[32m1\u001b[39m])[locs]\n",
+       "                            \u001b[38;5;28;01melif\u001b[39;00m (\n",
+       "                                isinstance(locs, np.ndarray) \u001b[38;5;28;01mand\u001b[39;00m locs.dtype.kind == \u001b[33m\"b\"\u001b[39m\n",
+       "                            ):\n",
+       "                                locs = locs.nonzero()[\u001b[32m0\u001b[39m]\n",
+       "                            \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m (\n",
+       "                                isinstance(locs, np.ndarray) \u001b[38;5;28;01mand\u001b[39;00m locs.dtype.kind == \u001b[33m\"i\"\u001b[39m\n",
+       "                            ):\n",
+       "                                \u001b[38;5;66;03m# Should never be reached, but let's cover our bases\u001b[39;00m\n",
+       "                                \u001b[38;5;28;01mraise\u001b[39;00m NotImplementedError(\n",
+       "                                    \u001b[33m\"Unexpected get_loc result, please report a bug at \"\u001b[39m\n",
+       "                                    \u001b[33m\"https://github.com/pandas-dev/pandas\"\u001b[39m\n",
+       "                                )\n",
+       "\n",
+       "                            \u001b[38;5;28;01mfor\u001b[39;00m i, loc \u001b[38;5;28;01min\u001b[39;00m enumerate(locs):\n",
+       "                                res_loc = res_k.iloc[:, i]\n",
+       "                                target = self.iloc[:, loc]\n",
+       "\n",
+       "                                \u001b[38;5;28;01mif\u001b[39;00m res_loc.dtype == target.dtype:\n",
+       "                                    result.iloc[:, loc] = res_loc\n",
+       "                                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                                    result.isetitem(loc, res_loc)\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "                    \u001b[38;5;28;01mreturn\u001b[39;00m self._update_inplace(result)\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    \u001b[38;5;28;01mreturn\u001b[39;00m result\n",
+       "\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m \u001b[38;5;28;01mnot\u001b[39;00m is_list_like(value):\n",
+       "                \u001b[38;5;28;01mif\u001b[39;00m axis == \u001b[32m1\u001b[39m:\n",
+       "                    result = self.T.fillna(value=value, limit=limit).T\n",
+       "                    new_data = result._mgr\n",
+       "                \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                    new_data = self._mgr.fillna(\n",
+       "                        value=value, limit=limit, inplace=inplace, downcast=downcast\n",
+       "                    )\n",
+       "            \u001b[38;5;28;01melif\u001b[39;00m isinstance(value, ABCDataFrame) \u001b[38;5;28;01mand\u001b[39;00m self.ndim == \u001b[32m2\u001b[39m:\n",
+       "                new_data = self.where(self.notna(), value)._mgr\n",
+       "            \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "                \u001b[38;5;28;01mraise\u001b[39;00m ValueError(f\"invalid fill value with a {type(value)}\")\n",
+       "\n",
+       "        result = self._constructor_from_mgr(new_data, axes=new_data.axes)\n",
+       "        \u001b[38;5;28;01mif\u001b[39;00m inplace:\n",
+       "            \u001b[38;5;28;01mreturn\u001b[39;00m self._update_inplace(result)\n",
+       "        \u001b[38;5;28;01melse\u001b[39;00m:\n",
+       "            \u001b[38;5;28;01mreturn\u001b[39;00m result.__finalize__(self, method=\u001b[33m\"fillna\"\u001b[39m)\n",
+       "\u001b[31mFile:\u001b[39m      c:\\users\\acer\\anaconda3\\lib\\site-packages\\pandas\\core\\generic.py\n",
+       "\u001b[31mType:\u001b[39m      method"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "df.fillna??"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "id": "60604b85-e4f3-4ff7-93c2-6e972f0f3fb4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\acer\\AppData\\Local\\Temp\\ipykernel_1896\\2171742998.py:1: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\n",
+      "The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n",
+      "\n",
+      "For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n",
+      "\n",
+      "\n",
+      "  df['A'].fillna(value = df['A'].mean(), inplace = True)\n"
+     ]
+    }
+   ],
+   "source": [
+    "df['A'].fillna(value = df['A'].mean(), inplace = True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "id": "3ee4e919-40a1-4f8c-af04-e3abb03d4020",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>A</th>\n",
+       "      <th>B</th>\n",
+       "      <th>C</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>1.0</td>\n",
+       "      <td>5.0</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>2.0</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>2</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>1.5</td>\n",
+       "      <td>NaN</td>\n",
+       "      <td>3</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "     A    B  C\n",
+       "0  1.0  5.0  1\n",
+       "1  2.0  NaN  2\n",
+       "2  1.5  NaN  3"
+      ]
+     },
+     "execution_count": 131,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "id": "e311451c-c6fa-4275-acf4-f38e02fa4865",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data = {\n",
+    "    'Company':['Google', 'Google', 'MSFT', 'FB','FB','IBM'],\n",
+    "    'Person': ['Sam','Nihad','Any','Van','Rakib','Ovi'],\n",
+    "    'Sales': [200, 120, 340, 124, 243, 350]\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "id": "f7ea2efd-0d6e-4f52-9e7a-b41741390c9f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df = pd.DataFrame(data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 134,
+   "id": "6a34e5d2-a0da-4708-85b2-3b4460bb4473",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Company</th>\n",
+       "      <th>Person</th>\n",
+       "      <th>Sales</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Google</td>\n",
+       "      <td>Sam</td>\n",
+       "      <td>200</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Google</td>\n",
+       "      <td>Nihad</td>\n",
+       "      <td>120</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>MSFT</td>\n",
+       "      <td>Any</td>\n",
+       "      <td>340</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>FB</td>\n",
+       "      <td>Van</td>\n",
+       "      <td>124</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>FB</td>\n",
+       "      <td>Rakib</td>\n",
+       "      <td>243</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>IBM</td>\n",
+       "      <td>Ovi</td>\n",
+       "      <td>350</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  Company Person  Sales\n",
+       "0  Google    Sam    200\n",
+       "1  Google  Nihad    120\n",
+       "2    MSFT    Any    340\n",
+       "3      FB    Van    124\n",
+       "4      FB  Rakib    243\n",
+       "5     IBM    Ovi    350"
+      ]
+     },
+     "execution_count": 134,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 135,
+   "id": "b0fe4409-5b39-4b76-8f37-5ecdcbed7e1b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "byComp = df.groupby('Company')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "id": "c6d8fdff-6b5d-4836-8902-040dcb263578",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>Sales</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>Company</th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>FB</th>\n",
+       "      <td>183.5</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>Google</th>\n",
+       "      <td>160.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>IBM</th>\n",
+       "      <td>350.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>MSFT</th>\n",
+       "      <td>340.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "         Sales\n",
+       "Company       \n",
+       "FB       183.5\n",
+       "Google   160.0\n",
+       "IBM      350.0\n",
+       "MSFT     340.0"
+      ]
+     },
+     "execution_count": 136,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "byComp.mean(numeric_only=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fb0109bc-9b72-4754-902e-332f53beb11e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
